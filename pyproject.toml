@@ -49,6 +49,10 @@ exclude = 'migrations/'
 [tool.django-stubs]
 django_settings_module = "src.settings"
 
+[[tool.mypy.overrides]]
+module = ["django_filters", "factory.*"]
+ignore_missing_imports = true
+
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 python_files = "tests.py test_*.py *_tests.py"
