@@ -1,7 +1,8 @@
 import pytest
+
+from src.apps.events.exceptions import UserAlreadyRegisteredForEvent
 from tests.factories.events import EventFactory
 from tests.factories.users import UserFactory
-from src.apps.events.exceptions import UserAlreadyRegisteredForEvent
 
 
 @pytest.mark.django_db

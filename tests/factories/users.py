@@ -1,5 +1,6 @@
-from factory.django import DjangoModelFactory
 from factory import Faker
+from factory.django import DjangoModelFactory
+
 from src.apps.users.models import User
 
 

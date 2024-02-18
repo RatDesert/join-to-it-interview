@@ -1,9 +1,10 @@
-from django.db import models
 from django.conf import settings
-from src.apps.events.validators import validate_event_date
-from src.apps.users.models import User
+from django.db import models
+
 from src.apps.events.exceptions import UserAlreadyRegisteredForEvent
 from src.apps.events.services import send_email_on_registration_for_event
+from src.apps.events.validators import validate_event_date
+from src.apps.users.models import User
 
 
 class Event(models.Model):

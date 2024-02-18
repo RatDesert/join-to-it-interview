@@ -1,13 +1,14 @@
-from rest_framework import viewsets, mixins, status
-from src.apps.events.serializers import ListEventSerializer, CreateEventSerializer
-from src.apps.events.models import Event
-from src.apps.events.permissions import IsOwnerOrReadOnly
-from rest_framework.permissions import IsAuthenticated
+from drf_spectacular.utils import extend_schema, extend_schema_view
+from rest_framework import mixins, status, viewsets
 from rest_framework.decorators import action
+from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
+
 from src.apps.events.exceptions import UserAlreadyRegisteredForEvent
 from src.apps.events.filters import EventsFilterSet
-from drf_spectacular.utils import extend_schema_view, extend_schema
+from src.apps.events.models import Event
+from src.apps.events.permissions import IsOwnerOrReadOnly
+from src.apps.events.serializers import CreateEventSerializer, ListEventSerializer
 
 
 @extend_schema_view(

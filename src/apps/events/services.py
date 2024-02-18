@@ -1,6 +1,8 @@
-from src.apps.users.models import User
-from django.core.mail import send_mail
 from typing import TYPE_CHECKING
+
+from django.core.mail import send_mail
+
+from src.apps.users.models import User
 
 if TYPE_CHECKING:
     from src.apps.events.models import Event

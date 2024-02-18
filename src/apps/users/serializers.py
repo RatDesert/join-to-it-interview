@@ -1,6 +1,7 @@
-from rest_framework import serializers
-from src.apps.users.models import User
 from django.contrib.auth.hashers import make_password
+from rest_framework import serializers
+
+from src.apps.users.models import User
 
 
 class CreateUserSerializer(serializers.ModelSerializer):

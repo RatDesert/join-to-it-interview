@@ -1,8 +1,9 @@
 import pytest
-from django.urls import reverse
-from rest_framework import status
-from django.utils import timezone
 from dateutil.relativedelta import relativedelta
+from django.urls import reverse
+from django.utils import timezone
+from rest_framework import status
+
 from tests.factories.users import UserFactory
 
 

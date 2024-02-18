@@ -1,6 +1,7 @@
-from rest_framework import viewsets, mixins
-from src.apps.users.serializers import CreateUserSerializer
+from rest_framework import mixins, viewsets
+
 from src.apps.users.models import User
+from src.apps.users.serializers import CreateUserSerializer
 
 
 class UserRegistrationViewSet(mixins.CreateModelMixin, viewsets.GenericViewSet):

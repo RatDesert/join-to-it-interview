@@ -1,5 +1,7 @@
 from typing import Any
+
 from rest_framework import serializers
+
 from src.apps.events.models import Event
 from src.apps.users.models import User
 
