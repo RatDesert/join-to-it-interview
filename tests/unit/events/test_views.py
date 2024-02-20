@@ -4,8 +4,8 @@ from django.urls import reverse
 from django.utils import timezone
 from rest_framework import status
 
-from tests.factories.users import UserFactory
 from tests.factories.events import EventFactory
+from tests.factories.users import UserFactory
 
 
 @pytest.mark.django_db
