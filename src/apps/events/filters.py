@@ -1,6 +1,5 @@
 from django_filters import rest_framework as filters
 
-from src.apps.events.models import Event
 from src.apps.users.models import User
 
 

@@ -8,7 +8,6 @@ class UserFactory(DjangoModelFactory):
     email = Faker("ascii_company_email")
     first_name = Faker("first_name")
     last_name = Faker("last_name")
-    # faker provides bad phone numbers
 
     class Meta:
         model = User
